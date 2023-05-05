@@ -2,5 +2,6 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/atspakor/apply.cts.org.pk # Add /<app_folder> if required
-    - /bin/cp * $DEPLOYPATH #Copy specific file to destination from root
+    - /bin/cp * $DEPLOYPATH #Copy all file to destination from root
+    - /bin/cp -R static/* $DEPLOYPATH #Copy all files in my_folder to destination
 
